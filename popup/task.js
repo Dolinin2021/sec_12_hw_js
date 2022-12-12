@@ -7,9 +7,7 @@ btnClose.addEventListener('click', () => {
 });
 
 window.onload = function() {
-    if (document.cookie == 'close=true') {
-        console.log(document.cookie);
-    } else {
+    if (!document.cookie.includes('close=true')) {
         modal.classList.add('modal_active');
     }
 }

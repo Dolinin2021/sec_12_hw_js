@@ -5,8 +5,7 @@ textarea.addEventListener('keyup', () => {
 });
 
 function reload () {
-    let value = localStorage.getItem('value');
-    textarea.value = value;
+    textarea.value = localStorage.getItem('value');
 }
 
 window.onload = function() {
